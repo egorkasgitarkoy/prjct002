@@ -1,0 +1,17 @@
+.info__button{
+    width: 100%;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 0 0 5px 5px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+    background: #ff9b51;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.info__button:hover{
+    background-color: orangered;
+}

@@ -1,0 +1,10 @@
+.info__popup{
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    position: relative;
+    width: 100%;
+    margin: auto 0;
+}
