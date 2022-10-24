@@ -1,0 +1,31 @@
+.info__radio {
+    display: inline-block;
+    margin-right: 10px;
+}
+.info__radio input[type=radio] {
+    display: none;
+}
+.info__radio label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 15px;
+    line-height: 34px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    user-select: none;
+    transition: 0.3s;
+}
+
+/* Checked */
+.info__radio input[type=radio]:checked + label {
+    background: #ffe0a6;
+}
+
+/* Hover */
+.info__radio label:hover {
+    color: #666;
+}
+
+.info__radio-btn{
+    margin: 15px 0;
+}

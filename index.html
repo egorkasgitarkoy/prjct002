@@ -4,18 +4,37 @@
     <meta charset="utf-8">
     <title>Merchant</title>
     <link rel="stylesheet" type="text/css" href="./styles.css">
-    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.jpg">
 </head>
 <body class="page">
     <main class="content">
-            <div class="info__popup">
-                <h2 class="info__form-title">Что везём?</h2>
+            <section class="info__popup">
+                <h2 class="info__form-title">Сформировать заявку</h2>
                 <form class="info__form">
+                    <p>Выберите фрукты:</p>
+                    <select>
+                        <option name="apple">Яблоки</option>
+                        <option name="banana">Бананы</option>
+                        <option name="peach">Персики</option>
+                    </select>
 
-                    <button class="info__button">Поихали!</button>
+                    <p>Введите количество:</p>
+                    <input class="info__number" name="number" required>
+
+                    <div class="info__radio-btn">
+                        <div class="info__radio">
+                            <input id="radio-1" type="radio" name="radio" value="stock" checked>
+                            <label for="radio-1">Со склада</label>
+                        </div>
+
+                        <div class="info__radio">
+                            <input id="radio-2" type="radio" name="radio" value="shop">
+                            <label for="radio-2">Из магазина</label>
+                        </div>
+                    </div>
+
+                    <button class="info__button">Готово</button>
                 </form>
-            </div>
-        </section>
+            </section>
     </main>
 </body>
 </html>

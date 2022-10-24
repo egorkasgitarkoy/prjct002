@@ -2,9 +2,11 @@
     background-color: #fff;
     border-radius: 5px;
     display: flex;
+    align-items: center;
     flex-direction: column;
+    justify-content: center;
     max-width: 360px;
     position: relative;
     width: 100%;
-    margin: auto 0;
+    margin: 170px auto auto;
 }
