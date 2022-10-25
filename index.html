@@ -9,32 +9,39 @@
     <main class="content">
             <section class="info__popup">
                 <h2 class="info__form-title">Сформировать заявку</h2>
-                <form class="info__form">
+                <form class="info__form" id="form">
                     <p>Выберите фрукты:</p>
-                    <select>
-                        <option name="apple">Яблоки</option>
-                        <option name="banana">Бананы</option>
-                        <option name="peach">Персики</option>
+                    <select class="fruits" name="fruit">
+                        <option value="яблок">Яблоки</option>
+                        <option value="бананов">Бананы</option>
+                        <option value="персиков">Персики</option>
                     </select>
 
                     <p>Введите количество:</p>
-                    <input class="info__number" name="number" required>
+                    <input type="number" class="info__number" name="number" min="1" max="10000" required>
 
                     <div class="info__radio-btn">
                         <div class="info__radio">
-                            <input id="radio-1" type="radio" name="radio" value="stock" checked>
+                            <input id="radio-1" type="radio" name="radio" value="Со склада" checked>
                             <label for="radio-1">Со склада</label>
                         </div>
-
                         <div class="info__radio">
-                            <input id="radio-2" type="radio" name="radio" value="shop">
+                            <input id="radio-2" type="radio" name="radio" value="Из магазина">
                             <label for="radio-2">Из магазина</label>
                         </div>
                     </div>
 
-                    <button class="info__button">Готово</button>
+                    <button type="submit" class="info__button">Готово</button>
                 </form>
             </section>
+
+            <section class="popup-alert">
+                <div class="popup__container">
+                    <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+                    <h2 id="text" class="popup__edit"></h2>
+                </div>
+            </section>
     </main>
+<script src="project.js"></script>
 </body>
 </html>
